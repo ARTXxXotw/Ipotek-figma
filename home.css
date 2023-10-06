@@ -1,10 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.page_header {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  background: url("./image/IH7wPsjwomc.svg") no-repeat fixed;
+  background-size: 100%;  
+}
 .page_navbar {
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 .page_navbar_icon {
   display: flex;
@@ -20,6 +33,7 @@
   display: block;
   width: 100%;
   margin: auto;
+  margin-top: 4%;
 }
 .page_text h1 {
   font-family: Geologica;
@@ -30,7 +44,8 @@
   text-align: center;
 }
 .page_text p {
-  width:500px;
+  padding-top: 2%;
+  width: 500px;
   color: #000;
   margin: auto;
   text-align: center;
@@ -40,14 +55,73 @@
   font-weight: 300;
   line-height: normal;
 }
-.page_slect{
-    margin-top: 4% !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+.page_slect {
+  padding-top: 6% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 10px;
 }
-.page_slect select{
-    width: 200px;
-    
+.page_slect .select {
+  cursor: pointer;
+  width: 260px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 3%;
+  padding-right: 3%;
+  border: 0;
+  background-color: #F5F5F5;
+}
+.page_slect .select:nth-child(1){
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.page_slect .select:nth-child(3){
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.select p {
+  margin-bottom: 5%;
+  font-weight: 400;
+  font-size: 11px;
+  font-family: Geologica;
+  line-height: 13.75px;
+  color: #828282;
+}
+.select .bx-chevron-down {
+  font-size: 25px;
+  color: #828282;
+}
+.select h1 {
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Geologica;
+}
+.page_slect button {
+  border: 0;
+  cursor: pointer;
+  width: 260px;
+  height: 60px;
+  color: black;
+  font-weight: 400;
+  font-family: Geologica;
+  line-height: 21.25px;
+  font-size: 17px;
+  border-radius: 10px;
+  background: var(--fill-yellow, #ffeb39);
+}
+.page_slect_div {
+  display: flex;
+  align-items: center; 
+  gap: 2px;
+}
+
+@media (max-width:1023px) {
+
 }
