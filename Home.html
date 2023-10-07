@@ -7,9 +7,12 @@
     <link href="https://fonts.googleapis.com/css?family=Geologica:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
     <link rel="stylesheet" href="./home.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./swiper.css">
 </head>
 <body>
     <div class="page_header">
+        <img class="page_header_image" src="./image/Rectangle 11.svg" alt="">
         <div class="page_navbar">
             <img src="./image/_Слой_1.svg" alt="">
             <div class="page_navbar_icon">
@@ -47,5 +50,133 @@
             <button>Показать цены</button>
         </div>
     </div>
+    
+    <div class="page_card">
+        <div class="page_card_div">
+            <img id="card_img" src="./image/Rectangle 8.svg" alt="">
+            <div onclick="click_card(0)" class="page_card_div_text">
+                <h1>Надежный партнер</h1>
+                <p>Ваш банк примет любой купленный у нас полис. Его можно передать по электронной почте или в отделении банка.</p>
+            </div>
+        </div>
+        <div class="page_card_div">
+            <img id="card_img" src="./image/Rectangle 8.svg" alt="">
+            <div onclick="click_card(1)" class="page_card_div_text">
+                <img src="./image/Group 30 3.svg" alt="">
+                <h1>Гарантия цены</h1>
+                <p>Покупайте полис ниже цен партнёров и агрегаторов — по цене калькулятора. Мы гарантируем низкую цену за счёт аналитики предложений.</p>
+            </div>
+        </div>
+        <div class="page_card_div">
+            <img id="card_img" src="./image/Rectangle 8.svg" alt="">
+            <div onclick="click_card(2)" class="page_card_div_text">
+                <h1>Быстро и онлайн</h1>
+                <p>Оформляйте полис на любой тип недвижимости, а также жизнь и здоровье за 10 минут. Не нужно  никуда ехать.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="page_two">
+     <div class="page_two_div">
+        <h1>Полис нужен, чтобы оформить ипотеку. Выбирайте его по ситуации:</h1>
+        <div class="page_two_div_card">
+            <div class="page_two_div_card_div">
+                <img id="card_two_img" src="./image/Rectangle 13.svg" alt="">
+                <div onclick="click_card_two(0)" class="page_two_div_card_text">
+                 <i class='bx bx-home'></i>
+                 <h1>Страхование недвижимости</h1>
+                 <p>Требуется, когда дом уже построили, а вы получили право собственности. Будут застрахованы только несущие конструкции здания. Ремонт и отделка включены не будут.</p>
+                </div>
+            </div>
+            <div class="page_two_div_card_div">
+                <img id="card_two_img" src="./image/Rectangle 13 (1).svg" alt="">
+                <div onclick="click_card_two(1)" class="page_two_div_card_text">
+                <i class='bx bx-heart' ></i>
+                 <h1>Страхование жизни и здоровья заёмщика</h1>
+                 <p>Может потребоваться, если при оформлении ипотеки дом ещё не построен, и не получено право собственности. Будут застрахованы жизнь и здоровье заёмщика.</p>
+                </div>
+            </div>
+            <div class="page_two_div_card_div">
+                <img id="card_two_img" src="./image/Rectangle 13 (2).svg" alt="">
+                <div onclick="click_card_two(2)" class="page_two_div_card_text">
+                <img src="./image/Group 30 4.svg" alt="">
+                <i class='bx bx-shield'></i>
+                 <h1>Комбинированный полис страхования</h1>
+                 <p>Полис, который включает сразу страхование жилья и жизни заёмщика. Как правило, банки рекомендуют своим клиентам оформить именно этот вид страхования.</p>
+                </div>
+            </div>
+        </div>
+        <button>Показать цены</button>
+     </div>
+    </div>
+
+    
+    <div class="page_three_aksiya">
+        <div class="page_three_aksiya_div">
+            <img src="./image/Rectangle 198.svg" alt="">
+            <div class="page_three_aksiya_div_card">
+                <h1>Aкции</h1>
+                <div  class="swiper mySwiper">
+                    <div id="swiper-wrapper" class="swiper-wrapper">
+                      <div id="swiper-slide" class="swiper-slide">
+                        <div class="page_three_aksiya_div_card_div">
+                            <img src="./image/sale_ 1.svg" alt="">
+                            <h1>Скидка 15% на страхование имущества</h1>
+                            <p>Защити свою квартиру от непредвиденных ситуаций</p>
+                        </div>
+                      </div>
+                      <div id="swiper-slide" class="swiper-slide">
+                        <div class="page_three_aksiya_div_card_div">
+                            <h1>«Инвитро» - забота о вашем здоровье со скидкой 20%</h1>
+                            <p>Закажи анализы рядом с домом</p>
+                        </div>
+                      </div>
+                      <div id="swiper-slide" class="swiper-slide">
+                        <div class="page_three_aksiya_div_card_div">
+                            <h1>Скидка 15% на страхование имущества</h1>
+                            <p>Защити свою квартиру от непредвиденных ситуаций</p>
+                        </div>
+                      </div>
+                      <div id="swiper-slide" class="swiper-slide">
+                        <div class="page_three_aksiya_div_card_div">
+                            <h1>«Инвитро» - забота о вашем здоровье со скидкой 20%</h1>
+                            <p>Закажи анализы рядом с домом</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        breakpoints: {
+        1200: {
+        slidesPerView: 2,
+        spaceBetween: 20
+        },
+        320: {
+        slidesPerView: 1,
+        spaceBetween: 80
+        },
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        });
+        function click_card(key){
+                document.querySelectorAll("#card_img")[key].classList.toggle("db")
+        }
+        function click_card_two(key){
+                document.querySelectorAll("#card_two_img")[key].classList.toggle("db")
+        }
+    </script>
 </body>
 </html>

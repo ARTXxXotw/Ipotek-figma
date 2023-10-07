@@ -2,14 +2,19 @@
   padding: 0;
   margin: 0;
 }
+body {
+  background-color: #f5f5f5;
+}
 .page_header {
+  overflow: hidden;
+  position: relative;
   width: 100%;
-  height: 100vh;
   display: block;
-  border-bottom-left-radius: 60px;
+  background: url("./image/IH7wPsjwomc.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   border-bottom-right-radius: 60px;
-  background: url("./image/IH7wPsjwomc.svg") no-repeat fixed;
-  background-size: 100%;  
+  border-bottom-left-radius: 60px;
 }
 .page_navbar {
   width: 90%;
@@ -25,6 +30,7 @@
 }
 .page_navbar_icon i {
   font-size: 24px;
+  cursor: pointer;
 }
 .page_navbar img {
   width: 260px;
@@ -57,6 +63,7 @@
 }
 .page_slect {
   padding-top: 6% !important;
+  padding-bottom: 15%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,15 +82,15 @@
   padding-left: 3%;
   padding-right: 3%;
   border: 0;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
-.page_slect .select:nth-child(1){
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+.page_slect .select:nth-child(1) {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
-.page_slect .select:nth-child(3){
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+.page_slect .select:nth-child(3) {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .select p {
   margin-bottom: 5%;
@@ -118,10 +125,403 @@
 }
 .page_slect_div {
   display: flex;
-  align-items: center; 
+  align-items: center;
   gap: 2px;
 }
+.header_fon_media {
+  display: none;
+}
+.page_header_image {
+  display: none;
+}
 
-@media (max-width:1023px) {
+.page_card_div {
+  width: 300px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.page_card_div img {
+  width: 100%;
+  margin-bottom: -35%;
+  position: relative;
+  z-index: -1;
+}
 
+.page_card_div_text {
+  position: relative;
+  border-radius: 30px;
+  padding: 30px;
+  background-color: #fff;
+}
+.page_card_div_text img {
+  position: absolute;
+  top: -35px;
+  right: 11px;
+  z-index: 1;
+  width: 103.594px;
+  height: 92.367px;
+}
+.page_card_div_text h1 {
+  color: #000;
+  font-family: Geologica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+}
+.page_card_div_text p {
+  margin-top: 2%;
+  color: var(--txt-gray-1, #828282);
+  font-family: Geologica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+}
+.page_card {
+  margin-top: 7% !important;
+  margin-bottom: 7% !important;
+  width: 80%;
+  gap: 15px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.page_two {
+  margin: auto;
+  padding: 60px;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page_two_div {
+  display: block;
+  text-align: center;
+}
+
+.page_two_div h1 {
+  color: var(--txt-black, #000);
+  width: 70%;
+  margin: auto;
+  font-family: Geologica;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 40px;
+}
+.page_two_div_card {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.page_two_div_card_div {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.page_two_div_card_div img {
+  width: 100%;
+  margin-bottom: -30px;
+}
+.page_two_div_card_text {
+  position: relative;
+  text-align: start !important;
+  padding: 30px;
+  position: relative;
+  z-index: 1;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+.page_two_div_card_text img{
+  position: absolute;
+  top: -30px;
+  right: 10px !important;
+  right: inherit;
+  width: 94.967px;
+}
+.page_two_div_card_text i {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.page_two_div button {
+  margin: auto;
+  cursor: pointer;
+  margin-top: 40px;
+  border: 0;
+  display: flex;
+  width: 450px;
+  max-width: 100%;
+  padding: 18px 112px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--fill-yellow, #ffeb39);
+  color: var(--txt-black, #000);
+  text-align: center;
+  /* txt_button */
+  font-family: Geologica;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.page_two_div_card_text h1 {
+  margin-bottom: 10px;
+  width: 100%;
+  color: var(--txt-black, #000);
+  font-family: Geologica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+}
+.page_two_div_card_text p {
+  color: var(--txt-gray-1, #828282);
+  font-family: Geologica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+}
+
+.page_three_aksiya{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page_three_aksiya_div img{
+  width: 472px;
+  border-radius: 30px;
+}
+
+.page_three_aksiya_div_card h1{
+text-align: right;
+color: var(--txt-black, #000);
+font-family: Geologica;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%;
+}
+
+.page_three_aksiya_div_card_div{
+  border-radius: 10px;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+}
+.page_three_aksiya_div_card_div img{
+  position: absolute;
+  top:-70px;
+  right: 100px;
+  width: 138px !important;
+}
+
+.page_three_aksiya_div_card_div h1{
+text-align: start;
+color: var(--txt-black, #000);
+font-family: Geologica;
+font-size: 16px !important;
+font-style: normal;
+font-weight: 300 !important;
+line-height: normal;
+margin-bottom: 2%;
+}
+
+.page_three_aksiya_div_card_div p{
+  text-align: start;
+  color: var(--txt-gray-1, #828282);
+font-family: Geologica;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 120%; 
+}
+
+.page_three_aksiya_div{
+  width:75%;
+  display: flex;
+  align-items: stretch;
+}
+
+.page_three_aksiya_div_card{
+  width: 70%;
+  position: relative;
+  z-index: 10;
+  display: block;
+  margin-left: -150px;
+}
+
+
+@media (max-width: 1023px) {
+  .page_slect_div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .page_slect .select:nth-child(1) {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+  .page_slect .select:nth-child(3) {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .page_text h1 {
+    font-size: 40px;
+  }
+  .page_text p {
+    width: 450px;
+    font-size: 20px;
+  }
+  .page_slect {
+    padding-bottom: 5%;
+  }
+  .page_navbar_icon {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page_two_div_card_text h1 {
+    margin-bottom: 10px !important;
+    width: 100% !important;
+    text-align: start !important;
+    color: var(--txt-black, #000);
+    font-family: Geologica !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 110% !important;
+  }
+  .page_header_image {
+    display: block;
+    position: absolute;
+    top: 15%;
+    z-index: -1;
+    border-radius: 30px;
+    width: 100%;
+  }
+  .page_header {
+    background: none;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  .page_navbar img {
+    width: 55%;
+  }
+  .page_slect {
+    border-radius: 30px;
+    margin-top: 35% !important;
+    padding: 20px;
+    background-color: #fff;
+  }
+  .page_slect_div {
+    width: 100%;
+  }
+  .page_slect .select {
+    width: 100%;
+  }
+  .page_slect button {
+    width: 100%;
+    height: 50px;
+  }
+  .page_text {
+    margin-top: 22%;
+  }
+  .page_navbar {
+    padding-top: 10%;
+  }
+  .page_text p {
+    width: 290px;
+    font-size: 16px;
+  }
+  .page_navbar_icon {
+    gap: 20px;
+    color: #828282;
+  }
+  .page_text h1 {
+    width: 80%;
+    margin: auto;
+    font-family: Geologica;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 110%;
+  }
+  #card_two_img{
+    display: none;
+  }
+  #card_img {
+    display: none;
+  }
+  .page_card {
+    width: 90%;
+    margin-top: 15% !important;
+    margin-bottom: 15% !important;
+  }
+  .page_card_div {
+    overflow: inherit !important;
+    width: 100%;
+  }
+  .db {
+    display: block !important;
+  }
+  .page_two_div_card_div{
+    overflow: inherit !important;
+  width: 100%;
+  }
+  
+  .page_two_div h1 {
+    width: 100%;
+    color: var(--txt-black, #000);
+    text-align: start;
+    font-family: Geologica;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .page_two{
+  width: 90%;
+  border-radius: 30px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  }
+  .page_two_div button {
+    margin: auto;
+    margin-top: 35px;
+    height: 50px;
+    padding: 0;
+    border: 0;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: var(--fill-yellow, #ffeb39);
+    color: var(--txt-black, #000);
+    text-align: center;
+    font-family: Geologica;
+    font-size: 17px;
+    font-weight: 400;
+  }
 }
