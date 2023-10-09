@@ -324,13 +324,16 @@ body {
 .page_three_aksiya_div_card_div {
   border-radius: 10px;
   background-color: #fff;
-  width: 100%;
+  width: 272px;
+  min-width: 272px;
   padding: 30px;
+  position: relative;
+  margin-top: 60px;
 }
 .page_three_aksiya_div_card_div img {
   position: absolute;
-  top: -70px;
-  right: -45px;
+  top: -60px;
+  right: 5px;
   width: 138px !important;
 }
 
@@ -354,19 +357,26 @@ body {
   font-weight: 300;
   line-height: 120%;
 }
-
+.page_three_aksiya_div_card_hiddin{
+  width: 70%;
+  overflow: scroll;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 20px;
+}
 .page_three_aksiya_div {
-  width: 75%;
+  width: 77%;
   display: flex;
   align-items: stretch;
+  position: relative;
 }
 
 .page_three_aksiya_div_card {
-  width: 70%;
-  position: relative;
+  width: 100%;
   z-index: 10;
   display: block;
-  margin-left: -150px;
+  position: absolute;
 }
 .page_four_accardion h1 {
   color: var(--txt-black, #000);
@@ -417,7 +427,7 @@ body {
   max-width: 85%;
 }
 .page_four {
-  width: 87%;
+  width: 88.8%;
   display: flex;
   align-items: end;
   justify-content: space-between;
@@ -447,6 +457,7 @@ body {
 
 .page_five_news_div_card{
   width: 300px;
+  min-width: 300px;
 }
 .page_five_news_div_card img{
   width: 100%;
@@ -459,14 +470,7 @@ body {
   background-color: #fff;
   border-radius: 30px;
 }
-.page_five_news_div_card_text h1{
-  color: var(--txt-black, #000);
-font-family: Geologica;
-font-size: 16px;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
-}
+
 .page_five_news_div_card_text p{
   color: var(--Gray-3, #828282);
 /* txt main 14 */
@@ -477,17 +481,37 @@ font-weight: 300;
 line-height: 120%; /* 16.8px */
 }
 
-#swiper1 {
-  width: 80%;
-  height: 100%;
+.page_five_news{
+  width: 88.8%;
+  display: block;
+  margin-left: auto;
+  overflow: hidden;
 }
 
-#swiper-slide1 {
-width: auto !important;
-}
 .page_five_news_div{
-width: 80%;
-margin-left: auto;
+width: 100%;
+display: flex;
+align-items: center;
+gap: 20px;
+overflow-x: scroll !important;
+}
+.page_five_news h1{
+color: var(--txt-black, #000);
+font-family: Geologica;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%;
+margin-bottom: 30px;
+}
+.page_five_news_div_card_text h1{
+  color: var(--txt-black, #000);
+font-family: Geologica;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+margin-bottom: 10px;
 }
 
 
@@ -518,11 +542,20 @@ margin-left: auto;
   .page_navbar_icon {
     gap: 50px;
   }
-  .page_three_aksiya_div_card {
-    margin-left: -200px !important;
-  }
-  .page_three_aksiya_div img {
+  /* .page_three_aksiya_div img {
     width: 400px;
+  } */
+}
+
+@media (max-width:800px) {
+  .page_three_aksiya_div_card h1{
+    display: none;
+  }
+  .page_three_aksiya_div_card_hiddin{
+    margin-top: 50px;
+  }
+  .page_three_aksiya_div_card_div h1{
+    display: block;
   }
 }
 
@@ -655,14 +688,12 @@ margin-left: auto;
   width: 100% !important;
   max-width: 100%;
   }
-  .accordion i{
-    margin-right: 5%;
-  }
   .page_four{
-  width: 95%;
+   width: 90%;
+   margin: auto !important;
   }
   .page_four img{
-  width: 95%;
+  width: 100%;
   }
   .page_four_accardion h1{
   margin-bottom: 4%;
@@ -691,4 +722,50 @@ margin-left: auto;
     transform: rotate(3.142rad);
     transition: 0.4s;
   }
+  .page_three_aksiya_div img{
+    width: 100%;
+  }
+  .page_three_aksiya_div{
+    width: 100%;
+  }
+  .page_three_aksiya_div_card{
+    width: 96%;
+    right: 0;
+    bottom: 20px;
+  }
+  .page_three_aksiya_div_card_hiddin{
+    width: 100%;
+  }
+  .page_three_aksiya_div_card_div{
+    width: 260px;
+    min-width: 260px;
+    padding: 20px;
+  }
+  .page_three_aksiya_div_card_div h1{
+   font-size: 16px;
+  }
+  .page_three_aksiya_div_card_div p{
+    font-size: 14px;
+  }
+  .page_five_news{
+    width: 90%;
+    margin: auto !important;
+    margin-top: 60px !important;
+  }
+  .page_five_news h1{
+    font-size: 24px;
+    text-align: center;
+    /* margin-bottom: 10px; */
+  }
+  .page_five_news_div_card{
+    min-width: 100%;
+  }
+  .page_five_news_div_card h1{
+    text-align: start !important;
+    font-size: 16px;
+  }
+  .page_five_news_div_card p{
+    font-size: 14px;
+  }
+
 }
